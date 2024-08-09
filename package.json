@@ -21,9 +21,11 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "lint": "env-cmd -f .env.dev eslint .",
-        "lint:fix": "env-cmd -f .env.dev eslint --fix .",
-        "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -54,8 +56,10 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.1",
         "eslint-plugin-simple-import-sort": "^10.0.0",
+        "gh-pages": "^6.1.1",
         "husky": "^8.0.3",
         "prettier": "^2.8.8",
         "source-map-explorer": "^2.5.3"
-    }
+    },
+    "homepage": "https://abhi1850.github.io/abhi-portfolio"
 }
