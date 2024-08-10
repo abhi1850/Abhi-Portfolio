@@ -21,16 +21,12 @@ export const routes = [
         ),
         errorElement: <ErrorPage />,
         children: [
-            // {
-            //     path: '/',
-            //     element: <Navigate to="/Home" />,
-            // },
             {
-                path: '/abhi-portfolio',
-                element: <Navigate to="/Home" />,
+                path: '/',
+                element: <Navigate to="/abhi-portfolio" />,
             },
             {
-                path: 'Home',
+                path: 'abhi-portfolio',
                 element: (
                     <Suspense>
                         <Home />

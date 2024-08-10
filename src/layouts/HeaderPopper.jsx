@@ -35,7 +35,7 @@ const HeaderPopper = () => {
                             padding: '10px 20px',
                         }}
                         aria-label="home"
-                        onClick={() => handleClick('/Home')}
+                        onClick={() => handleClick('/abhi-portfolio')}
                     >
                         Home
                     </IconButton>
